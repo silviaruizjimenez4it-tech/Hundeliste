@@ -1,0 +1,5 @@
+\! cls
+
+CREATE DATABASE Dogs;
+
+SHOW DATABASES;
