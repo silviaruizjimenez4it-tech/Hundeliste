@@ -7,5 +7,6 @@ SHOW DATABASES;
 USE Dogs;
 
 -- Tabellen anzeigen
-SHOW TABLES
+SHOW TABLES;
 
+source rdbms.SQL;
