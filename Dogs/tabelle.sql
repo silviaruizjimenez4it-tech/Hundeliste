@@ -18,6 +18,8 @@ CREATE TABLE IF NOT EXISTS Tiere
     k_alter TINYINT(4),
     k_rasse VARCHAR(100),
     k_ernaehrung VARCHAR(100),
+    k_krankheiten VARCHAR(100) NOT NULL DEFAULT "keine",
+    k_impftermin VARCHAR(100) NOT NULL DEFAULT "keine",
     k_besonderheiten VARCHAR(100)
 );
 
@@ -25,12 +27,12 @@ CREATE TABLE IF NOT EXISTS Tiere
 DESCRIBE Tiere;
 
 -- Datensätze/Zeilen
-INSERT INTO Tiere(k_id,k_name,k_alter,k_rasse,k_ernaehrung,k_besonderheiten) VALUES
-(DEFAULT,"Negra", 15, "Schäferhund Border Collie Mix","Seniorfutter","Tablette abends"),
-(DEFAULT,"Bonita",5, "Strassenhund","Nass- und Trockenfutter","Getreidefrei"),
-(DEFAULT,"Ursula",1,"Labrador Gorden Setter Mix","Nass- und Trockenfutter","keine"),
-(DEFAULT,"Merlin",6,"Perserkatze","Trockenfutter","Leckerli aller Art"),
-(DEFAULT,"Harlekin",6,"Hauskatze","Nassfutter","Leckerli Stangen");
+INSERT INTO Tiere(k_id,k_name,k_alter,k_rasse,k_ernaehrung,k_krankheiten,k_impftermin,k_besonderheiten) VALUES
+(DEFAULT,"Negra", 15, "Schaeferhund-Border Collie-Mix","Seniorfutter","mehrere Tumore",DEFAULT,"Tablette abends"),
+(DEFAULT,"Bonita",5, "Strassenhund","Nass- und Trockenfutter",DEFAULT,"05.10.2025","Getreidefrei"),
+(DEFAULT,"Ursula",1,"Labrador-Gorden Setter-Mix","Nass- und Trockenfutter",DEFAULT,"02.12.2025","keine"),
+(DEFAULT,"Merlin",6,"Perserkatze","Trockenfutter",DEFAULT,"10.03.2026","Leckerli aller Art"),
+(DEFAULT,"Harlekin",6,"Hauskatze","Nassfutter",DEFAULT,"10.03.2026","Leckerli Stangen");
 
 
 -- Tabellendaten (Inhalte) anzeigen
