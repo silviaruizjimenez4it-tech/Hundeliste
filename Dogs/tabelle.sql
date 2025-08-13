@@ -29,7 +29,7 @@ DESCRIBE Tiere;
 -- Datensätze/Zeilen
 INSERT INTO Tiere(k_id,k_name,k_alter,k_rasse,k_ernaehrung,k_krankheiten,k_impftermin,k_besonderheiten) VALUES
 (DEFAULT,"Negra", 15, "Border Collie-Mix","Seniorfutter","mehrere Tumore",DEFAULT,"Tabletten"),
-(DEFAULT,"Bonita",5, "Strassenhund","Nass und Trocken",DEFAULT,"05.10.2025","Getreidefrei"),
+(DEFAULT,"Bonita",5, "Strassenhund","Nass und Trocken","Allergie","05.10.2025","Getreidefrei"),
 (DEFAULT,"Ursula",1,"Gorden Setter-Mix","Nass und Trocken",DEFAULT,"02.12.2025","Kaustangen"),
 (DEFAULT,"Merlin",6,"Perserkatze","Trockenfutter",DEFAULT,"10.03.2026","Leckerli Kissen"),
 (DEFAULT,"Harlekin",6,"Hauskatze","Nassfutter",DEFAULT,"10.03.2026","Leckerli Stangen");
